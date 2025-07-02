@@ -1,0 +1,143 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root {
+    /* Color pellet */
+    --pellet-dark: #00213B;
+    --pellet-background: #E3F1FB;
+    --pellet-white: #fff;
+    --pellet-black: #000;
+    --pellet-foreground:#074576;
+    --pellet-features-back: #82CBFF;
+    --pellet-silver-pkg:#767D86;
+    --pellet-gold-pkg:#D6BD00;
+    --pellet-valid-green:#0CA80C;
+    --pellet-invalid-red:#FF0E0E;
+    --pellet-footer:#005AA1;
+    --pellet-payment-contrast: #91C4FB;
+    /* Font sizes */
+    --font-small: 14px;
+    --font-standard: 16px;
+    --font-normal: 20px;
+    --font-huge: 25px;
+    --font-banner: 35px;
+    /* Font weight */
+    --weight-bold:500;
+}
+/* Standard font sizes */
+.font-small{
+    font-size:14px;
+}
+.font-standard{
+    font-size:16px;
+}
+.font-normal{
+    font-size:20px;
+}
+.font-huge{
+    font-size:25px;
+}
+.font-banner{
+    font-size:35px;
+}
+/* Input fields */
+.inp{
+    padding:10px;
+    border-radius: 10px;
+    font-size:var(--font-small);
+    color: var(--pellet-white);
+    border:none;
+    outline:none;
+    background-color:var(--pellet-dark);
+    border:2px solid var(--pellet-dark);
+}
+.inp::placeholder{
+    color:var(--pellet-background);
+}
+/* For Chrome, Safari, Edge, and Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Show/Hide password text */
+
+.showPassword{
+    position:relative;
+}
+.showPassword .inp{
+    width:100%;
+    padding-right:72px;
+}
+.showPassword .showPasswordTarget{
+    cursor:pointer;
+    color:var(--pellet-white);
+    font-size:var(--font-small);
+    font-weight: var(--weight-bold);
+    position:absolute;
+    right:10px;
+    top:50%;
+    transform:translate(0,-50%);
+    user-select:none;
+    visibility: hidden;
+    transition: 0.5s;
+    opacity: 0;
+}
+.showPassword .showPasswordTarget.active{
+    visibility: visible;
+    opacity: 1;
+}
+/* Buttons */
+.btn{
+    background-color:var(--pellet-dark);
+    color:var(--pellet-white);
+    border:none;
+    outline:none;
+    padding:10px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    border:2px solid var(--pellet-dark);
+}
+.btn.secondary{
+    background-color:#ffffff00;
+    color:var(--pellet-dark);
+}
+.btn.disabled{
+    opacity: 0.5;
+    cursor: default;
+}
+/* General text color */
+.infoText{
+    color:var(--pellet-foreground);
+    font-size:var(--font-standard);
+}
+
+
+/* Loading ui css */
+.pageLoadingCover{
+    background-color:var(--pellet-dark);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+    width:100vw;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:100;
+    transition:0.2s
+}
+.pageLoadingCover img{
+    width:120px;
+}

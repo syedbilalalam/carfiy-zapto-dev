@@ -1,0 +1,56 @@
+.headingArea h2, .headingArea h1{
+    font-size:var(--font-huge);
+    font-weight:var(--weight-bold);
+}
+.mainForm{
+    display:none;
+    display:flex;
+    flex-direction:column;
+    gap:37px;
+}
+.mainForm .inputGroup{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+.mainForm .inpHolder{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.mainForm .buttonRow{
+    display:flex;
+    gap:10px;
+}
+.mainForm .buttonRow .takeWidth{
+    flex-grow:1;
+}
+.mainForm .buttonGroup{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.container{
+    padding:160px 20px 320px 20px;
+}
+.letSignUp{
+    font-size:var(--font-standard);
+    color:var(--pellet-dark);
+}
+.letSignUp a{
+    color:var(--pellet-foreground);
+}
+.mainForm .withIcon{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.mainForm label .ico{
+    cursor:pointer;
+}
+.mainForm .editEmail{
+    justify-content:center;
+}
+.mainForm .editEmail .ico{
+    font-size:20px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Checkout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8d7da;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #e91e63;
+        }
+        .success {
+            display: none;
+            text-align: center;
+            background: #ff4081;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="paymentForm">
+        <div class="title">Payment</div>
+        <input type="text" placeholder="Cardholder Name">
+        <input type="text" placeholder="Card Number">
+        <input type="text" placeholder="Expiration Date">
+        <input type="text" placeholder="CVC">
+        <button onclick="completePayment()">Complete Payment</button>
+    </div>
+    
+    <div class="success" id="successMessage">
+        <h2>Payment Success</h2>
+        <p>Order placed successfully!</p>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <script>
+        function completePayment() {
+            document.getElementById('paymentForm').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+        }
+        function goBack() {
+            document.getElementById('paymentForm').style.display = 'block';
+            document.getElementById('successMessage').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

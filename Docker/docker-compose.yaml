@@ -1,0 +1,52 @@
+services:
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./mysql-data/:/var/lib/mysql
+    # ports:
+    #   - "3306:3306"
+    networks:
+      - backend
+    restart: on-failure
+  
+  phpmyadmin:
+    image: phpmyadmin:5.2.2-apache
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    ports:
+      - "8080:80"
+    networks:
+      - backend
+    depends_on:
+      - mysql
+    restart: on-failure
+
+  php:
+    build:
+      context: ../
+      dockerfile: Docker/Dockerfile
+    environment:
+      DB_SERVER: mysql
+      DB_USER: root
+      DB_PASSWORD: root_password
+      DB_NAME: ms-client-carfiy
+    ports:
+      - 80:80
+    volumes:
+      - ../:/var/www/html
+      - ./logs:/var/log/apache2/
+    networks:
+      - backend
+    depends_on:
+      - mysql
+    restart: on-failure
+
+# Define networks for communication between containers
+networks:
+  backend:
+    name: backend
+    driver: bridge  # A default bridge network driver

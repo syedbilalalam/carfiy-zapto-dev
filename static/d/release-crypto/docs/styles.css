@@ -1,0 +1,156 @@
+.headingArea h2, .headingArea h1{
+    font-size:var(--font-huge);
+    font-weight:var(--weight-bold);
+}
+.mainForm{
+    display:none;
+    display:flex;
+    flex-direction:column;
+    gap:37px;
+}
+.mainForm .inputGroup{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+.mainForm .inpHolder{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.mainForm .buttonRow{
+    display:flex;
+    gap:10px;
+}
+.mainForm .buttonRow .takeWidth{
+    flex-grow:1;
+}
+.mainForm .buttonGroup{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.container{
+    padding:160px 20px 320px 20px;
+}
+.letSignUp{
+    font-size:var(--font-standard);
+    color:var(--pellet-dark);
+}
+.letSignUp a{
+    color:var(--pellet-foreground);
+}
+.container.itemsGap{
+    gap:40px;
+}
+
+/* Payment method css */
+.container{
+    font-size:var(--font-normal);
+    color:var(--pellet-foreground);
+}
+.container h2, .container h1{
+    color: var(--pellet-black);
+}
+.paymentBorder{
+    border:2px solid var(--pellet-dark);
+    border-radius:10px;
+    overflow:hidden;
+}
+.displayAmount {
+    display:flex;
+    height:80px;
+    width:100%;
+}
+.displayAmount .bigBubble{
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    padding:0 20px;
+}
+.displayAmount .bigBubble.contrast{
+    background-color:var(--pellet-payment-contrast);
+}
+.displayAmount .amountContainer{
+    hyphens:manual;
+}
+.displayAmount .amountValue{
+    width:fit-content;
+    white-space:nowrap;
+}
+.paymentMethod{
+    padding:10px;
+    display:flex;
+    gap:10px;
+    align-items:center;
+    height:60px;
+    cursor:pointer;
+    user-select:none;
+
+    /* To be removed later */
+    overflow:hidden;
+}
+.paymentMethod.cpn img{
+    height:42px;
+}
+.paymentMethod.cp img{
+    height:49px;
+}
+.paymentMethod select{
+    background-color:transparent;
+    font-size:var(--font-normal);
+    color:var(--pellet-foreground);
+    height:100%;
+    flex-grow:1;
+    border:none;
+    outline:none;
+}
+.paymentMethod.cpd{
+    height:fit-content;
+    flex-direction:column;
+    gap:20px;
+}
+.paymentMethod.cpd .mainContent{
+    width:fit-content;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    padding:20px;
+    word-break: break-all;
+}
+.paymentMethod.cpd .mainContent .depositAddress{
+    user-select:all;
+}
+.paymentMethod.cpd .mainContent img{
+    width:162px;
+}
+.paymentMethod .firstLine{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    align-items:center;
+    width:100%;
+}
+.paymentMethod.cpd .heading{
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+.paymentMethod.cpd .heading img{
+    width:42px;
+}
+.paymentMethod.cpd .btn{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    justify-content:center;
+}
+.paymentMethod.cpd .btn .ico{
+    font-size:18px;
+}
+.paymentMethod.cpd .expTime{
+    text-align:right;
+}

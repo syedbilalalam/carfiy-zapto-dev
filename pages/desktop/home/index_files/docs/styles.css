@@ -1,0 +1,172 @@
+/* Desktop frame limit */
+.desktopHeadFrameLimit{
+    max-width:1300px;
+    margin:0 auto;
+
+}
+
+/* Section A */
+.sectionA{
+    background-image:linear-gradient(var(--pellet-dark), var(--pellet-background));
+}
+.sectionA .desktopHeadFrameLimit{
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+.sectionA .userInteract{
+    width:50%;
+    flex-grow: 1;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding:50px 20px;
+}
+.sectionA .carImage{
+    width:50%;
+    /* width:100%; */
+    max-width:740px;
+    display:block;
+    margin:0 auto;
+    flex-grow:1;
+}
+.sectionA h2{
+    color:var(--pellet-white);
+    font-size:var(--font-huge);
+    padding:0 10px;
+    font-weight:var(--weight-bold);
+}
+.sectionA .form{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:10px;
+}
+.sectionA .form .inp{
+    flex-shrink:0;
+    width:100%;
+}
+.sectionA button{
+    width:fit-content;
+}
+
+/* Section B */
+.sectionB{
+    flex-direction:row;
+    align-items:center;
+}
+.sectionB .carConditionCheck{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+    width:100%;
+    max-width:620px;
+    margin:0 auto;
+    aspect-ratio: 660 / 289;
+}
+.sectionB .conditionA, .sectionB .conditionBCover{
+    width:100%;
+    position:absolute;
+    top:0;
+}
+.sectionB .conditionA{
+    left:0;
+}
+.sectionB .conditionBCover{
+    right:0;
+    overflow: hidden;
+    clip-path:inset(0 0 0 20px);
+}
+.sectionB .conditionB{
+    width:100%;
+}
+.sectionB .divider{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    align-items:center;
+    height:100%;
+    top:0;
+    left:20px;
+    cursor:pointer;
+}
+.sectionB .divider .verticalLine{
+    flex-grow: 1;
+    width:2px;
+    background-color:var(--pellet-dark);
+    border-radius:10px;
+}
+.sectionB .divider .centeredCircle{
+    height:30px;
+    aspect-ratio: 1/1;
+    border-radius:30px;
+    background-color:var(--pellet-background);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.sectionB .divider .centeredCircle span{
+    font-size:20px;
+}
+.sectionB .divider .centeredCircle span.right{
+    margin-left:-10px;
+}
+
+/* sectionCDH */
+.sectionCDH{
+    display:flex;
+    align-items: center;
+    gap:100px;
+}
+.sectionCDH .sectionC {
+    min-width:295px;
+}
+.sectionDH{
+    display:flex;
+    justify-content:flex-end;
+    flex-direction:row;
+}
+.sectionDH .tutorialB{
+    width:30%;
+    max-width:365px;
+    height:fit-content;
+}
+.sectionDH .tutorialA{
+    width:60%;
+    max-width:508px;
+}
+
+/* Section E */
+.sectionE{
+    margin-top:-187px;
+    background-image:linear-gradient(16deg, var(--pellet-features-back), #ffffff00 73%);
+    border-radius:20px;
+    padding:10px;
+    flex-direction:column;
+}
+.sectionE .features{
+    display:flex;
+    /* flex-direction:column; */
+    gap:40px;
+    text-align:center;
+    align-items:center;
+}
+.sectionE .features .feature{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.sectionE .features .feature p{
+    font-size:var(--font-huge);
+}
+.sectionE .features .feature img{
+    width:124px;
+}
+
+/* Section F modifications */
+.sectionF .sbsInfo img {
+    width:250px;
+}
+
+/* Section G modifications */

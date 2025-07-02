@@ -1,0 +1,26 @@
+/* Section D */
+.sectionD{
+    flex-direction:column;
+}
+.sectionD ul{
+    padding:0 30px;
+    color:var(--pellet-foreground)
+}
+/* .sectionD .tutorialA{
+    width:100%;
+}
+.sectionD .tutorialB{
+    width:100%;
+    max-width:365px;
+    } */
+.sectionD .imgContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+}
+.sectionD .tutorialA{
+    width:100%;
+}
+.sectionD .tutorialB{
+    max-width:300px;
+}

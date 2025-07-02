@@ -1,0 +1,238 @@
+/* General */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    display: block !important;
+    height: fit-content;
+    width: fit-content;
+}
+
+main {
+    background-color: var(--pellet-background);
+}
+a{
+    text-decoration: none;
+}
+a.dark{
+    color:var(--pellet-dark);
+}
+a.button{
+    /* width: 100%; */
+    display: block;
+}
+a .btn{
+    width:100%;
+}
+a.footerHover{
+    color:var(--pellet-white);
+}
+a.footerHover:hover{
+    text-decoration:underline;
+}
+
+.container {
+    padding: 52px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    min-height:100vh;
+}
+
+.sectionBlockSystem {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.sectionHeading {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sectionHeading h3 {
+    font-size: var(--font-huge);
+    font-weight: var(--weight-bold);
+}
+
+.deviceFrameLimitations {
+    max-width: 510px;
+    margin: 0 auto;
+}
+.deviceFrameLimitations.wide{
+    max-width:660px;
+}
+.deviceFrameLimitations.wider{
+    max-width:935px;
+}
+.deviceFrameLimitations.widerxd{
+    max-width:1300px;
+}
+.makeBold{
+    font-weight:var(--weight-bold);
+}
+.makePointer{
+    cursor:pointer;
+}
+.makeWordCrash{
+    word-break: break-all;
+}
+.makeWordSelect{
+    user-select: all;
+}
+.buttonRow{
+    display:flex;
+    gap:10px;
+}
+.buttonRow .takeWidth{
+    flex-grow:1;
+}
+
+/* Pop up box */
+.popUpBox{
+    background-color:#000000b9;
+    position:fixed;
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    z-index:10;
+    top:0;
+    left:0;
+    transition:0.2s;
+    visibility:hidden;
+    opacity:0;
+}
+.popUpBox.active{
+    visibility:visible;
+    opacity:1;
+}
+.popUpBox .cardHolder{
+    height: 100%;
+    max-height:60vh;
+    background-color:var(--pellet-background);
+    border-radius:10px;
+    position:relative;
+    overflow:hidden;
+    padding-top:40px;
+}
+.popUpBox .cardHolder .closeIco{
+    position:absolute;
+    top:20px;
+    right:20px;
+    cursor:pointer;
+}
+.popUpBox .mainCard{
+    height:100%;
+    overflow-y:auto;
+    max-width:450px;
+    padding:20px;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: var(--pellet-dark);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:40px;
+}
+nav{
+    padding:20px;
+    display: flex;
+    justify-content: flex-end;
+    gap:10px;
+    flex-wrap:wrap;
+}
+nav .btn{
+    background-color:var(--pellet-background);
+    color:var(--pellet-dark);
+    height:fit-content;
+}
+
+.mainLogo {
+    height: 89px;
+}
+
+.mobileNavigation {
+    background-color: var(--pellet-background);
+    height: fit-content;
+    flex-grow: 0;
+    border-radius: 10px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.mobileNavigation span {
+    color: var(--pellet-dark);
+    font-size: 40px;
+}
+
+
+/* Footer */
+footer{
+    background-image:linear-gradient(var(--pellet-footer), var(--pellet-dark));
+    color:var(--pellet-white);
+    display:flex;
+    flex-direction:column;
+    padding:30px 20px 10px 20px;
+    gap:20px;
+}
+footer .footerContent{
+    margin:0 auto;
+    display:flex;
+    max-width:820px;
+    width:100%;
+    justify-content: space-between;
+    gap:40px;
+}
+footer .footerContent .side{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+footer .footerContent .right.side{
+    padding-top:60px;
+    max-width:460px;
+}
+footer .mainLogo{
+    width:fit-content;
+}
+footer .supportedPayMethods{
+    background-color: var(--pellet-background);
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    gap: 16px;
+    padding: 7px 19px;
+    border-radius: 10px;
+    justify-content: center;
+    width: fit-content;
+    flex-wrap:wrap;
+}
+footer .supportedPayMethods img{
+    width:44px;
+}
+footer .softwareHouse{
+    text-align:center;
+    font-size:var(--font-small);
+    padding:10px 0;
+}
+
+footer .supportedPayMethods .fiverrIcon{
+    width:62px;
+}
+footer .supportedPayMethods .payoneerIcon{
+    width:32px;
+}
+footer .bankIcon{
+    font-size:36px;
+    color:var(--pellet-dark);
+}

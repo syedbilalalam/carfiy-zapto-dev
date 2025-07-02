@@ -1,0 +1,68 @@
+.headingArea h2, .headingArea h1{
+    font-size:var(--font-huge);
+    font-weight:var(--weight-bold);
+}
+.loginForm{
+    display:none;
+    display:flex;
+    flex-direction:column;
+    gap:37px;
+}
+.loginForm .inputGroup{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+.loginForm .inpHolder{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.loginForm .buttonRow{
+    display:flex;
+    gap:10px;
+}
+.loginForm .buttonRow .takeWidth{
+    flex-grow:1;
+}
+.loginForm .buttonGroup{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.loginForm .showPassword{
+    position:relative;
+}
+.loginForm .showPassword .inp{
+    width:100%;
+    padding-right:72px;
+}
+.loginForm .showPassword .showPasswordTarget{
+    cursor:pointer;
+    color:var(--pellet-white);
+    font-size:var(--font-small);
+    font-weight: var(--weight-bold);
+    position:absolute;
+    right:10px;
+    top:50%;
+    transform:translate(0,-50%);
+    user-select:none;
+    visibility: hidden;
+    transition: 0.5s;
+    opacity: 0;
+}
+.loginForm .showPassword .showPasswordTarget.active{
+    visibility: visible;
+    opacity: 1;
+}
+.container{
+    padding:160px 20px 320px 20px;
+}
+.letSignUp{
+    font-size:var(--font-standard);
+    color:var(--pellet-dark);
+}
+.letSignUp a{
+    font-weight:var(--weight-bold);
+    color:var(--pellet-foreground);
+}

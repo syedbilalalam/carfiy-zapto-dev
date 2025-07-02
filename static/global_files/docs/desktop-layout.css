@@ -1,0 +1,7 @@
+
+.sectionBlockSystem{
+    display: flex;
+    flex-direction: row !important;
+    gap: 40px;
+    padding: 20px 0;
+}

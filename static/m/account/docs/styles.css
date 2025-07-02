@@ -1,0 +1,28 @@
+.headingArea h2, .headingArea h1{
+    font-size:var(--font-huge);
+    font-weight:var(--weight-bold);
+}
+.headingArea{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.loginForm{
+    display:none;
+    display:flex;
+    flex-direction:column;
+    gap:37px;
+}
+.container{
+    padding:160px 20px 320px 20px;
+}
+.optionsContainer{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.optionsContainer .option{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}

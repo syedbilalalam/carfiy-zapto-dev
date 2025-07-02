@@ -1,0 +1,116 @@
+/* Section A */
+.sectionA{
+    display:flex;
+    flex-direction:column;
+    background-image:linear-gradient(var(--pellet-dark), var(--pellet-background));
+    gap:10px;
+}
+.sectionA .carImage{
+    width:100%;
+    max-width:440px;
+    display:block;
+    margin:0 auto;
+}
+.sectionA h2{
+    color:var(--pellet-white);
+    font-size:var(--font-huge);
+    text-align:center;
+    padding:0 10px;
+    font-weight:var(--weight-bold);
+}
+.sectionA .form{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:10px;
+    padding:0 20px;
+}
+.sectionA .form .inp{
+    flex-shrink:0;
+    width:100%;
+}
+.sectionA button{
+    width:fit-content;
+}
+
+/* Section B */
+.sectionB{
+}
+.sectionB .carConditionCheck{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+    width:100%;
+    max-width:400px;
+    margin:0 auto;
+    aspect-ratio: 660 / 289;
+}
+.sectionB .conditionA, .sectionB .conditionBCover{
+    width:100%;
+    position:absolute;
+    top:0;
+}
+.sectionB .conditionA{
+    left:0;
+}
+.sectionB .conditionBCover{
+    right:0;
+    overflow: hidden;
+    clip-path:inset(0 0 0 20px);
+}
+.sectionB .conditionB{
+    width:100%;
+}
+.sectionB .divider{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    align-items:center;
+    height:120%;
+    top:0;
+    left:20px;
+    cursor:pointer;
+}
+.sectionB .divider .verticalLine{
+    flex-grow: 1;
+    width:2px;
+    background-color:var(--pellet-dark);
+    border-radius:10px;
+}
+.sectionB .divider .centeredCircle{
+    height:30px;
+    aspect-ratio: 1/1;
+    border-radius:30px;
+    background-color:var(--pellet-background);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.sectionB .divider .centeredCircle span{
+    font-size:20px;
+}
+.sectionB .divider .centeredCircle span.right{
+    margin-left:-10px;
+}
+
+/* Section E */
+.sectionE{
+    background-image:linear-gradient(37deg,var(--pellet-features-back) ,#ffffff00 73%);
+    border-radius:20px;
+    padding:10px;
+}
+.sectionE .features{
+    display:flex;
+    flex-direction:column;
+}
+.sectionE .features .feature{
+    display:flex;
+    align-items:center;
+}
+.sectionE .features .feature p{
+    font-size:var(--font-huge);
+}
+.sectionE .features .feature img{
+    width:124px;
+}

@@ -1,0 +1,68 @@
+.headingArea h2, .headingArea h1{
+    font-size:var(--font-huge);
+    font-weight:var(--weight-bold);
+}
+.loginForm{
+    display:none;
+    display:flex;
+    flex-direction:column;
+    gap:37px;
+}
+.loginForm .inputGroup{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+.loginForm .inpHolder{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.loginForm .buttonRow{
+    display:flex;
+    gap:10px;
+}
+.loginForm .buttonRow .takeWidth{
+    flex-grow:1;
+}
+.loginForm .buttonGroup{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.container{
+    padding:160px 20px 320px 20px;
+}
+.letSignUp{
+    font-size:var(--font-standard);
+    color:var(--pellet-dark);
+}
+.letSignUp a{
+    font-weight:var(--weight-bold);
+    color:var(--pellet-foreground);
+}
+.headingArea{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.headingArea .infoText span{
+    font-weight:var(--weight-bold);
+}
+.otpInput{
+    display:flex;
+    gap:10px;
+    max-width:340px;
+    width:100%;
+    margin:0 auto;
+    justify-content:space-between;
+}
+.otpInput .inputSet{
+    display:flex;
+    gap:10px;
+}
+.inputSet .otpBox{
+    width: 40px;
+    text-align: center;
+    font-size:var(--font-standard);
+}

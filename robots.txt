@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+Disallow: /order-failed
+Disallow: /order-success
+Disallow: /order-pending
+Disallow: /user-verified
+Disallow: /verification-pending
+Disallow: /crypto-partial-payment
+Disallow: /select-crypto-currency
+Disallow: /payment-method
+Disallow: /release-crypto
+Disallow: /payoneer-pay
+Disallow: /bank-pay
+Disallow: /fiverr-link
+
+Sitemap: https://carfiy.zapto.org/sitemap.xml

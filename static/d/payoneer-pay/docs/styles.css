@@ -1,0 +1,158 @@
+.headingArea h2, .headingArea h1{
+    font-size:var(--font-huge);
+    font-weight:var(--weight-bold);
+}
+.mainForm{
+    display:none;
+    display:flex;
+    flex-direction:column;
+    gap:37px;
+}
+.mainForm .inputGroup{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+.mainForm .inpHolder{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.mainForm .buttonRow{
+    display:flex;
+    gap:10px;
+}
+.mainForm .buttonRow .takeWidth{
+    flex-grow:1;
+}
+.mainForm .buttonGroup{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.container{
+    padding:160px 20px 320px 20px;
+}
+.letSignUp{
+    font-size:var(--font-standard);
+    color:var(--pellet-dark);
+}
+.letSignUp a{
+    color:var(--pellet-foreground);
+}
+.container.itemsGap{
+    gap:40px;
+}
+
+/* Payment method css */
+.container{
+    font-size:var(--font-normal);
+    color:var(--pellet-foreground);
+}
+.container h2, .container h1{
+    color: var(--pellet-black);
+}
+.paymentBorder{
+    border:2px solid var(--pellet-dark);
+    border-radius:10px;
+    overflow:hidden;
+}
+.displayAmount {
+    display:flex;
+    height:80px;
+    width:100%;
+}
+.displayAmount .bigBubble{
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    padding:0 20px;
+}
+.displayAmount .bigBubble.contrast{
+    background-color:var(--pellet-payment-contrast);
+}
+.displayAmount .amountContainer{
+    flex-grow:1;
+}
+.displayAmount .amountValue{
+    width:fit-content;
+    white-space:nowrap;
+}
+.paymentMethod{
+    padding:10px;
+    display:flex;
+    gap:10px;
+    /* align-items:center; */
+    flex-direction:column;
+    /* height:60px; */
+    cursor:pointer;
+    user-select:none;
+
+    gap:25px;
+
+    /* To be removed later */
+    overflow:hidden;
+}
+.paymentMethod.payoneerBanner img{
+    height:27px;
+    width:fit-content;
+}
+.paymentMethod.payoneerBanner .payoneerContent{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}
+.paymentMethod.payoneerBanner .btn{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    justify-content:center;
+}
+.paymentMethod.uploadSection{
+    align-items:center;
+    padding:30px 10px;
+    text-align:center;
+    cursor:pointer;
+}
+.paymentMethod .uploadIcon{
+    font-size:90px;
+    color:var(--pellet-foreground);
+}
+.paymentMethod.payoneerBanner .payoneerEmail{
+    user-select:all;
+}
+.paymentMethod.payoneerBanner .ico{
+    font-size:19px;
+}
+.paymentMethod.cpn img{
+    height:42px;
+}
+.paymentMethod.cp img{
+    height:49px;
+}
+.paymentMethod select{
+    background-color:transparent;
+    font-size:var(--font-normal);
+    color:var(--pellet-foreground);
+    height:100%;
+    flex-grow:1;
+    border:none;
+    outline:none;
+}
+/* Fiile upload */
+.notUploaded .disabled{
+    display:none !important;
+}
+.uploadIcon{
+    display:none !important;
+}
+.uploadIcon.uploaded{
+    display:block !important;
+}
+.notUploaded .uploadIcon{
+    display:block !important;
+}
+.notUploaded .uploadIcon.uploaded{
+    display:none !important;
+}

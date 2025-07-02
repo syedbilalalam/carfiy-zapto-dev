@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Disable directory listing
+Options -Indexes
+
+# Redirect /ms/ explicitly to router.php
+RewriteRule ^$ router.php [L,QSA]
+
+# Redirect everything else under /ms/ to router.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ router.php [L,QSA]

@@ -1,0 +1,23 @@
+/* Section C */
+.sectionC .sbsInfo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:35px;
+}
+.sectionC .sbsInfo img{
+    width:126px;
+}
+
+/* Section F */
+.sectionF .sbsInfo{
+    display:flex;
+    align-items:center;
+}
+.sectionF .sbsInfo img{
+    width:142px;
+}
+.sectionF .replyPara{
+    display:flex;
+    flex-direction:column;
+}
